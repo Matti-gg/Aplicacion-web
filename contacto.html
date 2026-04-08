@@ -16,7 +16,7 @@
         .map-container { margin-top: 30px; border-radius: 12px; overflow: hidden; border: 1px solid #eee; }
         .social-media { text-align: center; margin-top: 25px; border-top: 1px solid #f1f1f1; padding-top: 20px; }
         .social-media p { font-size: 14px; color: #7f8c8d; margin-bottom: 15px; }
-        .social-links { display: flex; justify-content: center; gap: 20px; }
+        .social-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         .social-links a { color: #40916c; text-decoration: none; font-size: 14px; font-weight: 600; transition: color 0.2s; }
         .social-links a:hover { color: #1b4332; text-decoration: underline; }
     </style>
@@ -24,28 +24,28 @@
 <body>
     <div class="container">
         <h2>Contacto Veterinaria</h2>
-        <form>
+        <form action="#" method="POST">
             <label>Nombre del Dueño</label>
-            <input type="text" placeholder="Tu nombre completo" required>
+            <input type="text" name="dueno" placeholder="Tu nombre completo" required>
             <label>Nombre de la Mascota</label>
-            <input type="text" placeholder="Nombre de tu peludito">
+            <input type="text" name="mascota" placeholder="Nombre de tu peludito">
             <label>Correo Electrónico</label>
-            <input type="email" placeholder="ejemplo@correo.com" required>
+            <input type="email" name="email" placeholder="ejemplo@correo.com" required>
             <label>Motivo de Consulta</label>
-            <select>
+            <select name="motivo">
                 <option>Consulta General</option>
                 <option>Vacunación / Desparasitación</option>
                 <option>Estética Canina</option>
                 <option>Urgencia Médica</option>
             </select>
             <label>Mensaje o Síntomas</label>
-            <textarea rows="3" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+            <textarea name="mensaje" rows="3" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
             <button type="submit">Agendar Cita / Enviar</button>
         </form>
 
         <div class="map-container">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531531675!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1ses!2scl!4v1614123456789!5m2!1ses!2scl" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1724!2d-70.6506!3d-33.4372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDI2JzEzLjkiUyA3MMKwMzknMDIuMiJX!5e0!3m2!1ses!2scl!4v1649430000000!5m2!1ses!2scl" 
                 width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
@@ -53,10 +53,10 @@
         <div class="social-media">
             <p>Encuéntranos en Redes Sociales</p>
             <div class="social-links">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">TikTok</a>
-                <a href="#">WhatsApp</a>
+                <a href="https://instagram.com/tu_usuario" target="_blank">Instagram</a>
+                <a href="https://facebook.com/tu_usuario" target="_blank">Facebook</a>
+                <a href="https://tiktok.com/@tu_usuario" target="_blank">TikTok</a>
+                <a href="https://wa.me/56912345678" target="_blank">WhatsApp</a>
             </div>
         </div>
     </div>
