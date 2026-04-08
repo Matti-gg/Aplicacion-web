@@ -78,8 +78,9 @@ nav a:hover {
 /* 3. SECCIÓN HERO */
 .hero {
     height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=1500'); 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0
+    ,0,0.6)), 
+                url('https://images.pexels.com/photos/6816858/pexels-photo-6816858.jpeg'); 
     background-size: cover;
     background-position: center;
     display: flex;
