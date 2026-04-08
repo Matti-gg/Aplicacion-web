@@ -107,7 +107,7 @@ nav a:hover {
 }
 
 .btn-principal:hover {
-    background-color: #27ae60;
+    background-color: #27aeae;
     transform: scale(1.05);
 }
 
@@ -172,5 +172,58 @@ footer {
     }
     .hero-content h2 {
         font-size: 2rem;
+    }
+}
+
+/* Estilos para la página de Servicios */
+
+.banner-servicios {
+    background: var(--secundario);
+    color: white;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.contenedor-servicios {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 5%;
+}
+
+.detalle-servicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+/* Invierte el orden en servicios pares para que se vea dinámico (Zig-Zag) */
+.detalle-servicio.reverse {
+    flex-direction: row-reverse;
+}
+
+.texto-servicio h2 {
+    color: var(--primario);
+    margin-bottom: 15px;
+}
+
+.texto-servicio ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    list-style: circle;
+}
+
+.imagen-servicio img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+    .detalle-servicio, .detalle-servicio.reverse {
+        flex-direction: column;
+        text-align: center;
     }
 }
