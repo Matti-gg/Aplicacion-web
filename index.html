@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <header>
@@ -47,6 +49,10 @@
                 <p>Quirófano equipado con tecnología de vanguardia.</p>
             </article>
             <article class="servicio-card">
+                <h3>Urgencias</h3>
+                <p>Quirófano equipado con tecnología de vanguardia.</p>
+            </article>
+            <article class="servicio-card">
                 <h3>Especialistas</h3>
                 <p>Conoce a los encargados de cuidar a tus mascotas.</p>
             </article>
@@ -61,7 +67,18 @@
                 <p><strong>Teléfono:</strong> +123 456 789</p>
                 <p><strong>Horario:</strong> Lun - Dom: 9:00 AM - 8:00 PM</p>
             </div>
+
+            <div class="formulario-cita">
+                <h3>Reserva tu cita</h3>
+                <form id="formCita">
+                    <input type="text" name="mascota" placeholder="Nombre de la mascota" required>
+                    <input type="text" name="dueño" placeholder="Tu nombre" required>
+                    <input type="date" name="fecha" required>
+                    <textarea name="motivo" placeholder="Motivo de la consulta (ej. Vacunación, revisión...)" required></textarea>
+                    <button type="submit" class="btn-principal">Enviar Solicitud</button>
+                </form>
             </div>
+        </div>
     </section>
 
     <footer>

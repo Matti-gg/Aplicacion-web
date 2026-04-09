@@ -228,3 +228,23 @@ footer {
         text-align: center;
     }
 }
+
+.contacto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.formulario-cita form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 300px;
+}
+
+.formulario-cita input, .formulario-cita textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
